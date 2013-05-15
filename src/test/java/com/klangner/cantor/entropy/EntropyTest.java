@@ -1,8 +1,10 @@
-package com.klangner.entropy;
+package com.klangner.cantor.entropy;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import com.klangner.cantor.entropy.Entropy;
 
 public class EntropyTest {
 

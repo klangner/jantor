@@ -1,4 +1,4 @@
-package com.klangner.entropy;
+package com.klangner.cantor.entropy;
 
 import com.klangner.ast.INode;
 import com.klangner.ast.IParser;
