@@ -8,9 +8,15 @@ import com.klangner.ast.INode;
 import com.klangner.ast.IPackage;
 
 public class DependencyAnalyzer {
+	
+	public class Dependency{
+		String source;
+		String target;
+	}
 
-	List<IPackage> packages = new ArrayList<IPackage>();
-	List<IModule> modules = new ArrayList<IModule>();
+	private List<IPackage> packages = new ArrayList<IPackage>();
+	private List<IModule> modules = new ArrayList<IModule>();
+	private List<Dependency> dependencies = new ArrayList<Dependency>();
 	
 	
 	public DependencyAnalyzer(INode ast){
@@ -36,5 +42,9 @@ public class DependencyAnalyzer {
 	
 	public List<IModule> getModules(){
 		return modules;
+	}
+	
+	public List<Dependency> getPackageDependencies(){
+		return dependencies;
 	}
 }
