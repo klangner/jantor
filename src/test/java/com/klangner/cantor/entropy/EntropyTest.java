@@ -17,12 +17,4 @@ public class EntropyTest {
 		double value = entropy.calculateFileEntropy(DATASET_PATH+"project1/Entropy0.java");
 		assertEquals(0, value, 0.01);
 	}
-
-	@Test
-	public void entropy1() {
-		Entropy entropy = new Entropy();
-		double value = entropy.calculateFileEntropy(DATASET_PATH+"project1/Entropy1.java");
-		assertEquals(1, value, 0.1);
-	}
-
 }
