@@ -7,10 +7,11 @@ of the source code. Currently works only with Java projects.
 
 To analyze project:
 
-    cantor.jar [[command]] src
+    cantor.jar <command> src
 
 Where command:
 * list_modules - list all modules found in the project
+* list_packages - list all packages found in the project
 * (TODO) validate - Check if only visible packages are imported
 * (TODO) find_cycles - Find cycles in modules dependecies.
 
