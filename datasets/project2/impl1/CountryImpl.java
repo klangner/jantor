@@ -1,5 +1,9 @@
 package impl;
 
+import impl2.Country;
+import impl2.World;
+
+
 public class CountryImpl {
 
 	private String message = "My message";

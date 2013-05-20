@@ -1,5 +1,6 @@
 package com.klangner.cantor;
 
+import java.util.Collection;
 import java.util.List;
 
 import com.klangner.ast.IModule;
@@ -37,6 +38,9 @@ public class CantorApp {
 		else if(command.equals("list_packages")){
 			listPackages(srcPath);
 		}
+		else if(command.equals("list_dependencies")){
+			listDependecies(srcPath);
+		}
 		else{
 			printHelp();
 		}
@@ -47,7 +51,7 @@ public class CantorApp {
 		List<IModule> modules = analyzer.getModules();
 		System.out.println("Modules:");
 		for(IModule module: modules){
-			System.out.println(module.getName());
+			System.out.println(module.getText());
 		}
 	}
 
@@ -63,7 +67,20 @@ public class CantorApp {
 		List<IPackage> packages = analyzer.getPackages();
 		System.out.println("Packages:");
 		for(IPackage p : packages){
-			System.out.println(p.getName());
+			System.out.println(p.getText());
+		}
+	}
+
+	private void listDependecies(String srcPath) {
+		DependencyAnalyzer analyzer = getDependencyAnalyzer(srcPath);
+		Collection<IModule> modules = analyzer.getModules();
+		for(IModule module : modules){
+			System.out.println("Module: " + module.getName());
+			Collection<String> dependecies = analyzer.getModuleDependencies(module);
+			for(String dependency : dependecies){
+				System.out.println("- " + dependency);
+			}
+			System.out.println();
 		}
 	}
 

@@ -1,3 +1,6 @@
+package impl2;
+
+import impl1.CountryImpl;
 
 public class World {
 
