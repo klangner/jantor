@@ -1,4 +1,4 @@
-package com.klangner.cantor;
+package com.klangner.jantor;
 
 import java.util.Collection;
 import java.util.List;
@@ -8,7 +8,7 @@ import com.klangner.ast.INode;
 import com.klangner.ast.IPackage;
 import com.klangner.ast.IParser;
 import com.klangner.ast.java.JavaASTParser;
-import com.klangner.cantor.modularity.DependencyAnalyzer;
+import com.klangner.jantor.modularity.DependencyAnalyzer;
 
 public class CantorApp {
 

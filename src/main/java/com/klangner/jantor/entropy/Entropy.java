@@ -1,4 +1,4 @@
-package com.klangner.cantor.entropy;
+package com.klangner.jantor.entropy;
 
 
 

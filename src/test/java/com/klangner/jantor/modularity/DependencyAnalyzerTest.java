@@ -1,4 +1,4 @@
-package com.klangner.cantor.modularity;
+package com.klangner.jantor.modularity;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -13,7 +13,8 @@ import com.klangner.ast.INode;
 import com.klangner.ast.IPackage;
 import com.klangner.ast.IParser;
 import com.klangner.ast.java.JavaASTParser;
-import com.klangner.cantor.modularity.DependencyAnalyzer.Dependency;
+import com.klangner.jantor.modularity.DependencyAnalyzer;
+import com.klangner.jantor.modularity.DependencyAnalyzer.Dependency;
 
 public class DependencyAnalyzerTest {
 

@@ -1,4 +1,4 @@
-package com.klangner.cantor.modularity;
+package com.klangner.jantor.modularity;
 
 import java.util.ArrayList;
 import java.util.Collection;

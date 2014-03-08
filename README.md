@@ -1,21 +1,20 @@
-# Cantor
+# Jantor
 
-Cantor (after [Georg Cantor](http://pl.wikipedia.org/wiki/Georg_Cantor)) goal is to check modularity 
-of the source code. Currently works only with Java projects.
+Check modularity (package dependency) of the Java code.
 
 ## Analyzing project
 
 To analyze project:
 
-    cantor.jar <command> src
+    jantor.jar <command> src
 
 Where command:
 * list_modules - list all modules found in the project
 * list_packages - list all packages found in the project
-* (TODO) validate - Check if only visible packages are imported
+* list_dependencies - list dependencies between module and packages
 * (TODO) find_cycles - Find cycles in modules dependecies.
 
 
 ## Redistributing
-Cantor source code is distributed under the Apache 2.0 License. 
-Cantor may be freely redistributed, subject to the provisions of this license.
+Jantor source code is distributed under the Apache 2.0 License. 
+Jantor may be freely redistributed, subject to the provisions of this license.
